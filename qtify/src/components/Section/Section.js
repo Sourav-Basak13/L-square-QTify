@@ -22,7 +22,7 @@ function Section({ allbums = [], isLoading }) {
             <Card
               id={allbum?.id}
               imgUrl={allbum?.image}
-              followCount={allbum?.follows}
+              follows={allbum?.follows}
               title={allbum?.title}
             />
           </Grid>
