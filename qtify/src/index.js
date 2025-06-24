@@ -4,14 +4,28 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router";
 import MuiThemeProvider from "./mui-theme/MuiThemeProvider";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+export const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      refetchOnMount: true,
+      refetchOnReconnect: true,
+      retry: 0,
+    },
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MuiThemeProvider>
-        <App />
-      </MuiThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <MuiThemeProvider>
+          <App />
+        </MuiThemeProvider>
+      </QueryClientProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

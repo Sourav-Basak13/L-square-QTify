@@ -18,6 +18,9 @@ export const theme = createTheme({
     text: {
       primary: "#ffffff",
     },
+    background: {
+      default: "#121212",
+    },
   },
 });
 

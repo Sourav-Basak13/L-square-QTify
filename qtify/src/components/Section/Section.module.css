@@ -1,0 +1,20 @@
+.section {
+  width: 1376px;
+  height: 536px;
+  margin: auto;
+}
+
+.section_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.section_collapse_btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: right;
+}
