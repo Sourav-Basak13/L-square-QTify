@@ -4,6 +4,7 @@ import styles from "./Section.module.css";
 import Card from "../Card/Card";
 import Button from "../Button/Button";
 import Carousel from "../Carousel/Carousel";
+import Loader from "../../ui/Loader/Loader";
 
 function Section({ sectionTitle, allbums = [], isLoading }) {
   const [showAll, setShowAll] = useState(false);
@@ -19,11 +20,22 @@ function Section({ sectionTitle, allbums = [], isLoading }) {
         <Button
           className={styles.section_collapse_btn}
           onClick={() => setShowAll((prev) => !prev)}
+          disabled={isLoading}
         >
           {showAll ? "Collapse" : "Show all"}
         </Button>
       </Stack>
-      {showAll && (
+      {isLoading && (
+        <Loader
+          sx={{
+            height: "236px",
+          }}
+          configLoader={{
+            size: 20,
+          }}
+        />
+      )}
+      {!isLoading && showAll && (
         <Grid container rowSpacing={3} columnSpacing={5}>
           {allbums.map((allbum) => (
             <Grid lg={1.5} key={allbum?.id}>
@@ -37,7 +49,9 @@ function Section({ sectionTitle, allbums = [], isLoading }) {
           ))}
         </Grid>
       )}
-      {!showAll && <Carousel allbums={allbums} isLoading={isLoading} />}
+      {!isLoading && !showAll && (
+        <Carousel allbums={allbums} isLoading={isLoading} />
+      )}
     </Box>
   );
 }
