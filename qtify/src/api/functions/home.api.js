@@ -1,8 +1,14 @@
 import { axiosInstance } from "../axiosInstance";
 import { endpoints } from "../endpoints";
 
-export const fetchAlbums = async () => {
-  const response = await axiosInstance.get(endpoints.albums.all);
+export const fetchTopAlbums = async () => {
+  const response = await axiosInstance.get(endpoints.albums.allTop);
+
+  return response;
+};
+
+export const fetchNewAlbums = async () => {
+  const response = await axiosInstance.get(endpoints.albums.allNew);
 
   return response;
 };
