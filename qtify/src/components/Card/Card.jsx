@@ -20,7 +20,7 @@ const StyledChip = styled(Chip)`
   background: #121212; */
 `;
 
-function Card({ id, imgUrl, follows, title }) {
+function Card({ id, imgUrl, count, title, isSong }) {
   return (
     <Stack className={styles.card_wrapper} rowGap={0.75}>
       <MuiCard className={styles.card}>
@@ -31,7 +31,7 @@ function Card({ id, imgUrl, follows, title }) {
               className={styles.card_follow}
               label={
                 <Typography className={styles.card_follow_text}>
-                  {follows} Follows
+                  {count} {isSong ? "Likes" : "Follows"}
                 </Typography>
               }
               variant="filled"

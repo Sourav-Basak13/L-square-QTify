@@ -5,4 +5,8 @@ export const endpoints = {
     allTop: "albums/top",
     allNew: "albums/new",
   },
+  songs: {
+    all: "songs",
+  },
+  genres: "genres",
 };

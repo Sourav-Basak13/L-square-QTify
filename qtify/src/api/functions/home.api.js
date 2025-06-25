@@ -12,3 +12,15 @@ export const fetchNewAlbums = async () => {
 
   return response;
 };
+
+export const fetchSongs = async () => {
+  const response = await axiosInstance.get(endpoints.songs.all);
+
+  return response;
+};
+
+export const fetchGenres = async () => {
+  const response = await axiosInstance.get(endpoints.genres);
+
+  return response;
+};

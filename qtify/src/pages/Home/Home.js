@@ -1,7 +1,11 @@
 import React from "react";
 import WebWrapper from "../../layout/WebWrapper/WebWrapper";
 import { useQuery } from "@tanstack/react-query";
-import { fetchNewAlbums, fetchTopAlbums } from "../../api/functions/home.api";
+import {
+  fetchNewAlbums,
+  fetchSongs,
+  fetchTopAlbums,
+} from "../../api/functions/home.api";
 import Section from "../../components/Section/Section";
 import Carousel from "../../components/Carousel/Carousel";
 import { Divider } from "@mui/material";
@@ -15,8 +19,10 @@ export default function Home() {
     queryKey: ["get-fetch-new-albums"],
     queryFn: fetchNewAlbums,
   });
-
-  // console.log(data, "fetchAlbums");
+  const { data: songsData, isFetching: isSongsFetching } = useQuery({
+    queryKey: ["get-fetch-songs"],
+    queryFn: fetchSongs,
+  });
 
   return (
     <WebWrapper showHero>
@@ -35,7 +41,17 @@ export default function Home() {
         allbums={newAlbumsData?.data}
         isLoading={isNewAlbumsFetching}
       />
-      <br />
+      <Divider
+        sx={(theme) => ({
+          borderColor: theme.palette.primary.main,
+        })}
+      />
+      <Section
+        sectionTitle="Songs"
+        allbums={songsData?.data}
+        isLoading={isSongsFetching}
+        isSong
+      />
     </WebWrapper>
   );
 }

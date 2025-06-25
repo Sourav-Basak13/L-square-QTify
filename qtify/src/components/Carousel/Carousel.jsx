@@ -16,7 +16,7 @@ const StyledSwiperSlide = styled(SwiperSlide)`
   }
 `;
 
-function Carousel({ allbums = [], isLoading }) {
+function Carousel({ allbums = [], isLoading, isSong }) {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [initial, setInitial] = useState(false);
@@ -24,8 +24,10 @@ function Carousel({ allbums = [], isLoading }) {
   useEffect(() => {
     setInitial(true);
 
-    return () => setInitial(false);
-  }, []);
+    return () => {
+      setInitial(false);
+    };
+  }, [allbums]);
   return (
     <>
       <Swiper
@@ -52,13 +54,14 @@ function Carousel({ allbums = [], isLoading }) {
       >
         <PrevButton ref={prevRef} />
         <NextButton ref={nextRef} />
-        {allbums.map((allbum) => (
-          <StyledSwiperSlide>
+        {allbums.map((allbum, index) => (
+          <StyledSwiperSlide className={!index ? "active" : ""}>
             <Card
               id={allbum?.id}
               imgUrl={allbum?.image}
-              follows={allbum?.follows}
+              count={allbum?.follows ?? allbum?.likes}
               title={allbum?.title}
+              isSong={isSong}
             />
           </StyledSwiperSlide>
         ))}

@@ -40,7 +40,7 @@
     "numTestsKeptInMemory": 0,
     "platform": "win32",
     "pageLoadTimeout": 60000,
-    "port": 52456,
+    "port": 62782,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
@@ -117,7 +117,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "13.17.0",
-  "endedTestsAt": "2025-06-24T02:45:29.021Z",
+  "endedTestsAt": "2025-06-25T03:41:10.368Z",
   "osName": "win32",
   "osVersion": "10.0.19045",
   "runs": [
@@ -127,40 +127,19 @@
       "reporterStats": {
         "suites": 7,
         "tests": 14,
-        "passes": 10,
+        "passes": 13,
         "pending": 0,
-        "failures": 4,
-        "start": "2025-06-24T02:44:55.828Z",
-        "end": "2025-06-24T02:45:29.027Z",
-        "duration": 33199
+        "failures": 1,
+        "start": "2025-06-25T03:40:50.412Z",
+        "end": "2025-06-25T03:41:10.373Z",
+        "duration": 19961
       },
       "screenshots": [
         {
           "height": 720,
           "name": null,
-          "path": "F:\\crio-projects\\L-square-QTify\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Cards Tests -- should match the count of top, and new album cards with their respective API responses (failed).png",
-          "takenAt": "2025-06-24T02:45:11.566Z",
-          "width": 1280
-        },
-        {
-          "height": 720,
-          "name": null,
-          "path": "F:\\crio-projects\\L-square-QTify\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Albums Section tests -- should show cards for Top and New Albums and verify the 'Show All' functionality (failed).png",
-          "takenAt": "2025-06-24T02:45:16.776Z",
-          "width": 1280
-        },
-        {
-          "height": 720,
-          "name": null,
-          "path": "F:\\crio-projects\\L-square-QTify\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Slider functionality tests -- should verify if the first two albums are not visible after clicking the slider's next button 4 times (failed).png",
-          "takenAt": "2025-06-24T02:45:22.569Z",
-          "width": 1280
-        },
-        {
-          "height": 720,
-          "name": null,
           "path": "F:\\crio-projects\\L-square-QTify\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Songs test -- should match the count of song cards with their respective API responses (failed).png",
-          "takenAt": "2025-06-24T02:45:28.646Z",
+          "takenAt": "2025-06-25T03:41:09.914Z",
           "width": 1280
         }
       ],
@@ -172,13 +151,13 @@
         "relative": "cypress\\e2e\\spec.cy.js"
       },
       "stats": {
-        "duration": 33202,
-        "endedAt": "2025-06-24T02:45:29.021Z",
-        "failures": 4,
-        "passes": 10,
+        "duration": 19969,
+        "endedAt": "2025-06-25T03:41:10.368Z",
+        "failures": 1,
+        "passes": 13,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-06-24T02:44:55.819Z",
+        "startedAt": "2025-06-25T03:40:50.399Z",
         "suites": 7,
         "tests": 14
       },
@@ -190,7 +169,7 @@
             }
           ],
           "displayError": null,
-          "duration": 1846,
+          "duration": 1787,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -205,7 +184,7 @@
             }
           ],
           "displayError": null,
-          "duration": 1006,
+          "duration": 387,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -220,7 +199,7 @@
             }
           ],
           "displayError": null,
-          "duration": 417,
+          "duration": 373,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -235,7 +214,7 @@
             }
           ],
           "displayError": null,
-          "duration": 346,
+          "duration": 261,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -250,7 +229,7 @@
             }
           ],
           "displayError": null,
-          "duration": 294,
+          "duration": 271,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -265,7 +244,7 @@
             }
           ],
           "displayError": null,
-          "duration": 294,
+          "duration": 321,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -280,7 +259,7 @@
             }
           ],
           "displayError": null,
-          "duration": 322,
+          "duration": 302,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -295,7 +274,7 @@
             }
           ],
           "displayError": null,
-          "duration": 281,
+          "duration": 329,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -310,7 +289,7 @@
             }
           ],
           "displayError": null,
-          "duration": 686,
+          "duration": 324,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -325,7 +304,7 @@
             }
           ],
           "displayError": null,
-          "duration": 566,
+          "duration": 323,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -336,12 +315,12 @@
         {
           "attempts": [
             {
-              "state": "failed"
+              "state": "passed"
             }
           ],
-          "displayError": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `getNewAlbums`. No request ever occurred.\n\nhttps://on.cypress.io/wait\n    at cypressErr (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:76065:18)\n    at Object.errByPath (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:76119:10)\n    at checkForXhr (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:135342:84)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:135368:28)\n    at tryCatcher (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise.attempt.Promise.try (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:4338:29)\n    at whenStable (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:143744:68)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:143685:14)\n    at tryCatcher (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise._settlePromiseFromHandler (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1542:31)\n    at Promise._settlePromise (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1668:18)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:5473:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://buildout-qtify-v2/./cypress/e2e/spec.cy.js:203:11)",
-          "duration": 6459,
-          "state": "failed",
+          "displayError": null,
+          "duration": 2109,
+          "state": "passed",
           "title": [
             "Buildout Qtify v2",
             "Cards Tests",
@@ -351,12 +330,12 @@
         {
           "attempts": [
             {
-              "state": "failed"
+              "state": "passed"
             }
           ],
-          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '/show all/i' but never did.\n    at checkAlbumVisibilityAndToggleShowAll (webpack://buildout-qtify-v2/./cypress/e2e/spec.cy.js:231:13)\n    at Context.eval (webpack://buildout-qtify-v2/./cypress/e2e/spec.cy.js:246:8)",
-          "duration": 4992,
-          "state": "failed",
+          "displayError": null,
+          "duration": 1587,
+          "state": "passed",
           "title": [
             "Buildout Qtify v2",
             "Albums Section tests",
@@ -366,12 +345,12 @@
         {
           "attempts": [
             {
-              "state": "failed"
+              "state": "passed"
             }
           ],
-          "displayError": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `getNewAlbums`. No request ever occurred.\n\nhttps://on.cypress.io/wait\n    at cypressErr (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:76065:18)\n    at Object.errByPath (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:76119:10)\n    at checkForXhr (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:135342:84)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:135368:28)\n    at tryCatcher (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise.attempt.Promise.try (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:4338:29)\n    at whenStable (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:143744:68)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:143685:14)\n    at tryCatcher (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise._settlePromiseFromHandler (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1542:31)\n    at Promise._settlePromise (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1668:18)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:5473:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://buildout-qtify-v2/./cypress/e2e/spec.cy.js:265:11)",
-          "duration": 5699,
-          "state": "failed",
+          "displayError": null,
+          "duration": 2154,
+          "state": "passed",
           "title": [
             "Buildout Qtify v2",
             "Slider functionality tests",
@@ -385,7 +364,7 @@
             }
           ],
           "displayError": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `getSongs`. No request ever occurred.\n\nhttps://on.cypress.io/wait\n    at cypressErr (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:76065:18)\n    at Object.errByPath (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:76119:10)\n    at checkForXhr (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:135342:84)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:135368:28)\n    at tryCatcher (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise.attempt.Promise.try (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:4338:29)\n    at whenStable (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:143744:68)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:143685:14)\n    at tryCatcher (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise._settlePromiseFromHandler (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1542:31)\n    at Promise._settlePromise (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:1668:18)\n    at <unknown> (https://qtify-ten-phi.vercel.app/__cypress/runner/cypress_runner.js:5473:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://buildout-qtify-v2/./cypress/e2e/spec.cy.js:310:11)",
-          "duration": 6060,
+          "duration": 5671,
           "state": "failed",
           "title": [
             "Buildout Qtify v2",
@@ -397,10 +376,10 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2025-06-24T02:44:55.819Z",
-  "totalDuration": 33202,
-  "totalFailed": 4,
-  "totalPassed": 10,
+  "startedTestsAt": "2025-06-25T03:40:50.399Z",
+  "totalDuration": 19969,
+  "totalFailed": 1,
+  "totalPassed": 13,
   "totalPending": 0,
   "totalSkipped": 0,
   "totalSuites": 7,
