@@ -43,9 +43,9 @@ function Carousel({ allbums = [], isLoading, isSong }) {
           nextEl: nextRef.current,
         }}
         spaceBetween={40}
-        // slidesPerView={7}
+        slidesPerView={7}
         effect="flip"
-        // loop={true}
+        loop={true}
         breakpoints={{
           920: {
             slidesPerView: 6,

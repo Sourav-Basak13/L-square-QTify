@@ -40,7 +40,7 @@
     "numTestsKeptInMemory": 0,
     "platform": "win32",
     "pageLoadTimeout": 60000,
-    "port": 50728,
+    "port": 64258,
     "projectId": null,
     "redirectionLimit": 20,
     "reporter": "spec",
@@ -84,10 +84,10 @@
         "channel": "stable",
         "displayName": "Firefox",
         "family": "firefox",
-        "majorVersion": "139",
+        "majorVersion": "140",
         "name": "firefox",
         "path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
-        "version": "139.0.4"
+        "version": "140.0.1"
       },
       {
         "channel": "stable",
@@ -117,7 +117,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "13.17.0",
-  "endedTestsAt": "2025-06-25T11:37:34.990Z",
+  "endedTestsAt": "2025-06-27T14:18:11.611Z",
   "osName": "win32",
   "osVersion": "10.0.19045",
   "runs": [
@@ -130,9 +130,9 @@
         "passes": 14,
         "pending": 0,
         "failures": 0,
-        "start": "2025-06-25T11:37:17.589Z",
-        "end": "2025-06-25T11:37:34.996Z",
-        "duration": 17407
+        "start": "2025-06-27T14:17:44.847Z",
+        "end": "2025-06-27T14:18:11.618Z",
+        "duration": 26771
       },
       "screenshots": [],
       "spec": {
@@ -143,13 +143,13 @@
         "relative": "cypress\\e2e\\spec.cy.js"
       },
       "stats": {
-        "duration": 17409,
-        "endedAt": "2025-06-25T11:37:34.990Z",
+        "duration": 26772,
+        "endedAt": "2025-06-27T14:18:11.611Z",
         "failures": 0,
         "passes": 14,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2025-06-25T11:37:17.581Z",
+        "startedAt": "2025-06-27T14:17:44.839Z",
         "suites": 7,
         "tests": 14
       },
@@ -161,7 +161,7 @@
             }
           ],
           "displayError": null,
-          "duration": 2781,
+          "duration": 4763,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -176,7 +176,7 @@
             }
           ],
           "displayError": null,
-          "duration": 390,
+          "duration": 625,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -191,7 +191,7 @@
             }
           ],
           "displayError": null,
-          "duration": 321,
+          "duration": 903,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -206,7 +206,7 @@
             }
           ],
           "displayError": null,
-          "duration": 361,
+          "duration": 767,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -221,7 +221,7 @@
             }
           ],
           "displayError": null,
-          "duration": 291,
+          "duration": 461,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -236,7 +236,7 @@
             }
           ],
           "displayError": null,
-          "duration": 312,
+          "duration": 934,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -251,7 +251,7 @@
             }
           ],
           "displayError": null,
-          "duration": 312,
+          "duration": 959,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -266,7 +266,7 @@
             }
           ],
           "displayError": null,
-          "duration": 381,
+          "duration": 709,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -281,7 +281,7 @@
             }
           ],
           "displayError": null,
-          "duration": 318,
+          "duration": 899,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -296,7 +296,7 @@
             }
           ],
           "displayError": null,
-          "duration": 369,
+          "duration": 492,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -311,7 +311,7 @@
             }
           ],
           "displayError": null,
-          "duration": 2052,
+          "duration": 3422,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -326,7 +326,7 @@
             }
           ],
           "displayError": null,
-          "duration": 1905,
+          "duration": 1800,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -341,7 +341,7 @@
             }
           ],
           "displayError": null,
-          "duration": 943,
+          "duration": 3278,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -356,7 +356,7 @@
             }
           ],
           "displayError": null,
-          "duration": 3341,
+          "duration": 3101,
           "state": "passed",
           "title": [
             "Buildout Qtify v2",
@@ -368,8 +368,8 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2025-06-25T11:37:17.581Z",
-  "totalDuration": 17409,
+  "startedTestsAt": "2025-06-27T14:17:44.839Z",
+  "totalDuration": 26772,
   "totalFailed": 0,
   "totalPassed": 14,
   "totalPending": 0,

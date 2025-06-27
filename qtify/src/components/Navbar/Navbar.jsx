@@ -59,7 +59,7 @@ function Navbar({ searchData }) {
 
       {width > 768 && (
         <>
-          <Link to="/">
+          <Link to="/" style={{ justifySelf: "flex-start" }}>
             <Logo />
           </Link>
           <Search
