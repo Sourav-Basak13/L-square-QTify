@@ -15,3 +15,24 @@
   letter-spacing: 0px;
   text-align: center;
 }
+
+.hero_img {
+  width: 212px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero_img {
+    width: 140px;
+  }
+}
+@media (max-width: 499px) {
+  .hero h1 {
+    font-size: 14px;
+  }
+  .hero_img {
+    width: 90px;
+  }
+}

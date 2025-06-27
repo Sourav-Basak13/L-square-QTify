@@ -5,6 +5,8 @@ import App from "./App";
 import { BrowserRouter } from "react-router";
 import MuiThemeProvider from "./mui-theme/MuiThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import EventListener from "./components/EventListener/EventListener";
+import { Toaster } from "sonner";
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -23,6 +25,8 @@ root.render(
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <MuiThemeProvider>
+          <Toaster position="top-center" />
+          <EventListener />
           <App />
         </MuiThemeProvider>
       </QueryClientProvider>

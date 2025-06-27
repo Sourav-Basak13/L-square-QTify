@@ -4,6 +4,8 @@
   --color-primary: #34c94b;
   --color-black: #121212;
   --color-white: #ffffff;
+  --color-gray: #666666;
+  --color-btn-gray: #222222;
 }
 
 * {

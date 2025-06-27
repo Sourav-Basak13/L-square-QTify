@@ -3,12 +3,12 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Box } from "@mui/material";
 
-function WebWrapper({ children, showHero }) {
+function WebWrapper({ children, isSongPlayer }) {
   return (
     <Box>
-      <Header showHero={showHero} />
+      <Header isSongPlayer={isSongPlayer} />
       {children}
-      <Footer />
+      <Footer isSongPlayer={isSongPlayer} />
     </Box>
   );
 }

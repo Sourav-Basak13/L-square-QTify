@@ -4,10 +4,16 @@
 
 .card {
   border-radius: 10px;
+  background: transparent;
 }
 
 .card_content {
   padding: 7px;
+  background-color: var(--color-white);
+}
+
+.card_content_skeleton {
+  background-color: var(--color-gray);
 }
 
 .card_follow {
@@ -17,6 +23,10 @@
   padding-bottom: 4px;
   padding-left: 8px;
   background: #121212;
+}
+
+.card_follow_skeleton {
+  background: var(--color-btn-gray);
 }
 
 .card_follow_text {

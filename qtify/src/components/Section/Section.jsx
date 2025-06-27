@@ -1,16 +1,33 @@
 import React, { useCallback, useMemo, useState } from "react";
-import { Box, Grid, Stack, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Grid, Stack, styled, Tab, Tabs, Typography } from "@mui/material";
 import styles from "./Section.module.css";
 import Card from "../Card/Card";
 import Button from "../Button/Button";
 import Carousel from "../Carousel/Carousel";
 import Loader from "../../ui/Loader/Loader";
+import useDimension from "../../hooks/general/useDimension";
 import { useQuery } from "@tanstack/react-query";
 import { fetchGenres } from "../../api/functions/home.api";
+
+const StyledExpandButton = styled(Button, [
+  {
+    shouldForwardProp: true,
+  },
+])(({ theme }) => ({
+  ".MuiTypography-root": {
+    "@media(max-width:768px)": {
+      fontSize: "16px",
+    },
+    "@media(max-width:499px)": {
+      fontSize: "12px",
+    },
+  },
+}));
 
 function Section({ sectionTitle, allbums = [], isLoading, isSong }) {
   const [showAll, setShowAll] = useState(false);
   const [value, setValue] = useState("all");
+  const { width } = useDimension();
 
   const { data: genresData, isFetching: isGenresFetching } = useQuery({
     queryKey: ["get-fetch-genres"],
@@ -45,13 +62,13 @@ function Section({ sectionTitle, allbums = [], isLoading, isSong }) {
         </Typography>
 
         {!isSong && (
-          <Button
-            className={styles.section_collapse_btn}
+          <StyledExpandButton
+            className={`${styles.section_collapse_btn}`}
             onClick={() => setShowAll((prev) => !prev)}
             disabled={isLoading}
           >
             {showAll ? "Collapse" : "Show all"}
-          </Button>
+          </StyledExpandButton>
         )}
       </Stack>
       {isSong && (
@@ -78,7 +95,7 @@ function Section({ sectionTitle, allbums = [], isLoading, isSong }) {
           ))}
         </Tabs>
       )}
-      {(isLoading || isGenresFetching) && (
+      {/* {(isLoading || isGenresFetching) && (
         <Loader
           sx={{
             height: "236px",
@@ -87,11 +104,11 @@ function Section({ sectionTitle, allbums = [], isLoading, isSong }) {
             size: 20,
           }}
         />
-      )}
-      {!isLoading && showAll && (
+      )} */}
+      {showAll && (
         <Grid container rowSpacing={3} columnSpacing={5}>
           {allbums.map((allbum) => (
-            <Grid lg={1.5} key={allbum?.id}>
+            <Grid lg={1.5} sm={1.5} key={allbum?.id}>
               <Card
                 id={allbum?.id}
                 imgUrl={allbum?.image}
@@ -102,7 +119,7 @@ function Section({ sectionTitle, allbums = [], isLoading, isSong }) {
           ))}
         </Grid>
       )}
-      {!isLoading && !showAll && (
+      {!showAll && (
         <Carousel
           key={value}
           allbums={filteredData}
