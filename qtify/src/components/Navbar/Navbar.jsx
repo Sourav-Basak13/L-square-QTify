@@ -29,8 +29,18 @@ function Navbar({ searchData }) {
           <Link to="/">
             <Logo />
           </Link>
-          {!open && <MenuIcon onClick={() => setOpen(true)} />}
-          {open && <ClearIcon onClick={() => setOpen(false)} />}
+          {!open && (
+            <MenuIcon
+              className={styles.mobile_icon}
+              onClick={() => setOpen(true)}
+            />
+          )}
+          {open && (
+            <ClearIcon
+              className={styles.mobile_icon}
+              onClick={() => setOpen(false)}
+            />
+          )}
         </Stack>
       )}
       <TransitionGroup>
